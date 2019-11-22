@@ -38,7 +38,7 @@ Rails.application.routes.draw do
   match("/insert_flight", { :controller => "flights", :action => "create", :via => "post"})
           
   # READ
-  match("/flights", { :controller => "flights", :action => "index", :via => "get"})
+  match("/", { :controller => "flights", :action => "index", :via => "get"})
   
   match("/flights/:id_from_path", { :controller => "flights", :action => "show", :via => "get"})
   

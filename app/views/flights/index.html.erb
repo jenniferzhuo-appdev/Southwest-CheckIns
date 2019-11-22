@@ -36,19 +36,7 @@
           User
         </label>
 
-        <input type="text" id="user_id_box" name="user_id_from_query" class="form-control">
-      </div>
-
-      <div class="custom-control custom-checkbox mb-3">
-        <input type="checkbox" class="custom-control-input" id="fifteen_minute_message_sent_box" name="fifteen_minute_message_sent_from_query" value="1">
-
-        <label class="custom-control-label" for="fifteen_minute_message_sent_box">Fifteen minute message sent</label>
-      </div>
-
-      <div class="custom-control custom-checkbox mb-3">
-        <input type="checkbox" class="custom-control-input" id="minute_message_sent_box" name="minute_message_sent_from_query" value="1">
-
-        <label class="custom-control-label" for="minute_message_sent_box">Minute message sent</label>
+        <input type="text" id="user_id_box" name="user_id_from_query" class="form-control" >
       </div>
 
       <button class="btn btn-block btn-outline-secondary">
@@ -63,9 +51,6 @@
   <div class="col-md-12">
     <table class="table">
       <tr>
-        <th>
-          ID
-        </th>
 
         <th>
           Description
@@ -101,10 +86,7 @@
 
       <% @flights.each do |flight| %>
       <tr>
-        <td>
-          <%= flight.id %>
-        </td>
-
+        
         <td>
           <%= flight.description %>
         </td>
