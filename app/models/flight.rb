@@ -13,4 +13,6 @@
 #
 
 class Flight < ApplicationRecord
+  validates :departure, :presence => true
+
 end
